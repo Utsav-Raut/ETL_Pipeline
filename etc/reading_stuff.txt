@@ -1,0 +1,30 @@
+******* MySQL ************
+
+opening mysql command line shell: 
+    mysql -u username -p
+eg: mysql -u root -p
+
+******* MONGO *************
+
+opening mongoshell:
+sudo systemctl start mongod : to start the server
+sudo systemctl status mongod : to check the status of the server
+
+if there is some error like "mongod.service: Failed with result 'exit-code'.", then : 
+sudo chown -R mongodb:mongodb /var/lib/mongodb 
+sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
+
+mongosh: will enable the mongoshell to work with
+
+show databases: to checkout the databases
+use databasename: to select a database to work with
+
+show collections: to checkout the list of collections
+
+db.collectionname.find() : this works like select * from tablename
+
+
+
+
+
+
